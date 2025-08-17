@@ -1,0 +1,45 @@
+/* Sidebar container */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 20px;
+    width: 100%;
+    max-width: 250px;
+    height: 100vh;
+    background: #000000; /* Black background */
+}
+
+/* Sidebar items */
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 20px;
+    padding: 10px 15px; /* Slightly increased padding for better touch targets */
+    border-radius: 6px;
+    background: #FFD700; /* Yellow background */
+    gap: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+/* Hover effect for sidebar items */
+.sidebar-item:hover {
+    background: #FFC300; /* Darker yellow on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 800px) {
+    .sidebar {
+        padding: 30px 0px;
+        flex-direction: row;
+        width: 100%;
+        max-width: none;
+        height: auto;
+        justify-content: center;
+    }
+    .sidebar-item {
+        margin: 0;
+    }
+}

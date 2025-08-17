@@ -1,0 +1,55 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    margin-bottom: 1px;
+    background-color: #000000; /* Black background */
+    transition: background-color 0.3s;
+}
+
+/* Navbar logo */
+.nav-logo {
+    width: 200px;
+}
+
+/* Profile image */
+.nav-profile {
+    width: 75px;
+    border-radius: 50%; /* Circular profile image */
+    transition: width 0.3s;
+}
+
+/* Hover effects */
+.navbar:hover {
+    background-color: #333333; /* Dark gray on hover for a slight visual effect */
+}
+
+/* Responsive styles */
+@media(max-width: 800px) {
+    .navbar {
+        padding: 15px 30px;
+    }
+    .nav-logo {
+        width: 150px;
+    }
+    .nav-profile {
+        width: 60px;
+    }
+}
+
+/* For even smaller screens */
+@media(max-width: 500px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+    .nav-logo {
+        width: 120px;
+    }
+    .nav-profile {
+        width: 50px;
+    }
+}
+
